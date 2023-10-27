@@ -12,7 +12,7 @@ def main():
                 text = f.read()
         except FileExistsError:
             print("no file")
-        md = markdown.Markdown(extensions=["toc", "sane-lists"])
+        md = markdown.Markdown(extensions=["toc"])
         html = md.convert(text)
         with open(outputFile,"w") as f:
             f.write(html)
