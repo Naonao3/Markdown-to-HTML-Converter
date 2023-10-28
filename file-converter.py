@@ -12,8 +12,10 @@ def main():
                 text = f.read()
         except FileExistsError:
             print("no file")
-        md = markdown.Markdown(extensions=["toc"])
-        html = md.convert(text)
+        #md = markdown.Markdown(extensions=["toc"])
+        html = markdown.markdown(text,extensions=["toc","codehilite","sane_lists","extra"])
+
+        #html = md.convert(text)
         with open(outputFile,"w") as f:
             f.write(html)
     else:
