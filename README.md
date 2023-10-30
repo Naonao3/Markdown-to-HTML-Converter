@@ -1,4 +1,4 @@
-# Markdown-to-HTML-Converter
+# Markdown to HTML Converter
 
 ## 概要
 マークダウンをHTMLに変換するプログラムです。
